@@ -17,6 +17,7 @@ public class ex1{
         System.out.println("Insira um número para saber se pertence a sequência de Fibonacci: ");
         n = scanner.nextInt();
         
+        // Verifica se é menor que 0 ou se é 0.
         if (n < 0){
             System.out.println("O número não pertence a sequência de Fibonacci.");
             return;
@@ -25,6 +26,7 @@ public class ex1{
             return;
         }
 
+        // Faz a sequência de Fibonacci e verifica que o numero informado existe na mesma.
         for (int i = 0; i < n; i++){
             f1 = f2 + f3;
             if (f1 == n){
@@ -35,6 +37,7 @@ public class ex1{
             f3 = f1;
         }  
 
+        // Caso não exista na sequência, retorna ao usuário
         System.out.println("O número não pertence a sequência de Fibonacci.");
         return;
     }
